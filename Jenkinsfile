@@ -20,7 +20,7 @@ node {
     def resourceGroup = 'CI-CD'
     def webAppName = 'myJenksWEbApp'
     // login Azure
-    withCredentials([azureServicePrincipal('89f90433-13a8-4c39-96ec-edb9d7d2d7bf')]) {
+    withCredentials([azureServicePrincipal('53513bee-bf93-4d92-aaaf-ab514b222d88')]) {
       sh '''
         az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
         az account set -s $AZURE_SUBSCRIPTION_ID
